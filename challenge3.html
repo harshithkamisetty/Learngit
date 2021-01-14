@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<script>
+   function atm(amt)
+   {
+   var amount=amt;
+      var coins=[0,0,0,0];
+      var temp=amount;
+      coins[0]=Math.floor(amount/10);
+      amount=amount-coins[0]*10;
+     
+      coins[1]=Math.floor(amount/5);
+      amount=amount-coins[1]*5;
+     
+     
+      coins[2]=Math.floor(amount/2);
+      amount=amount-coins[2]*2;
+      
+      
+      coins[3]=Math.floor(amount/1);
+      amount=amount-coins[3]*1;
+     var text="The number of 10 ruppe coins"+ coins[0] +"<br>"+"The number of 5 ruppe coins"+ coins[1] +"<br>"+"The number of 2 ruppe coins"+ coins[2] +"<br>"+"The number of 1 ruppe coins"+ coins[3] +"<br>"
+    return text;
+   }
+</script>
+<body>
+   <form>
+      <label for="amount">Enter Amount:</label>
+      <input type="number" id="amt" name="amount">
+      <p id="test"></p>
+      <button type = "button"  onclick='document.getElementById("test").innerHTML=atm(amount.value)'>click me</button>
+      
+   </form>
+</body>
+</html>

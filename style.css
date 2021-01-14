@@ -1,0 +1,36 @@
+body{
+   margin:0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.topbar
+{
+background-color: blueviolet;
+padding-left: 500px;
+width: auto;
+height: 50px;
+}
+
+.topbar a
+{
+   float: left;
+   display:block;
+   color: black;
+   text-align: center;
+   padding: 14px 19px;
+
+}
+.findopportunities
+{
+   padding-left: 500px;
+}
+.opport
+{
+   padding-left: 400px;
+}
+.card {
+   float: left;
+   width: 200px;
+   padding: 10px;
+   position: relative;
+   left: 20px;
+ }
